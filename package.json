@@ -1,5 +1,6 @@
 {
     "name": "website",
+    "private": true,
     "version": "0.1",
     "description": "The helsinki loves refugees and cosmopolitanism group wepapp",
     "engines": {
