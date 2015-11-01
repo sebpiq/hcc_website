@@ -1,7 +1,6 @@
 {    
     "name": "helsinki-loves-refugees",
-    "private": true,
-    "version": "0.0",
+    "version": "1.0.0",
     "description": "The helsinki loves refugees and cosmopolitanism group wepapp",
     "main": "index.js"
 }
