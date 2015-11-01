@@ -2,5 +2,8 @@
     "name": "helsinki-loves-refugees",
     "version": "1.0.0",
     "description": "The helsinki loves refugees and cosmopolitanism group wepapp",
+    "dependencies": {
+	"express": "~4.13.1"
+    },
     "main": "index.js"
 }
