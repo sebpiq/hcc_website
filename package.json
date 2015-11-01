@@ -1,0 +1,12 @@
+{
+    "name": "website",
+    "version": 1.0,
+    "description": "The helsinki loves refugees and cosmopolitanism group wepapp",
+    "engines": {
+	"node": ">=0.12"
+    },
+    "dependencies": {
+	"express": "3.x"
+    }
+    "main": "index.js"
+}
