@@ -1,6 +1,6 @@
 {
     "name": "website",
-    "version": 1.0,
+    "version": "0.1",
     "description": "The helsinki loves refugees and cosmopolitanism group wepapp",
     "engines": {
 	"node": ">=0.12"
