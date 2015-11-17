@@ -3,53 +3,55 @@ var React = require('react')
   , ReactDOM = require('react-dom')
   , $ = require('jquery')
 
-var Comment = React.createClass({
+var Group = React.createClass({
+
   render: function() {
     return (
-      <div className="comment">
-        <h2 className="commentAuthor">
-          {this.props.author}
-        </h2>
-        {this.props.children}
-      </div>
+      <h2 className="groupName">{this.props.name}</h2>
     );
   }
+
 });
 
-var CommentBox = React.createClass({
-  render: function() {
-    return (
-      <div className="commentBox">
-        <h1>Comments</h1>
-        <CommentList />
-        <CommentForm />
-      </div>
-    );
-  }
-});
+var GroupList = React.createClass({
+  
+  getInitialState: function() {
+    return {data: []};
+  },
 
-var CommentList = React.createClass({
-  render: function() {
-    return (
-      <div className="commentList">
-        <Comment author="Pete Hunt">This is one comment</Comment>
-        <Comment author="Jordan Walke">This is *another* comment</Comment>
-      </div>
-    );
-  }
-});
+  componentDidMount: function() {
+    this.loadCommentsFromServer();
+  },
+  
+  loadCommentsFromServer: function() {
+    $.ajax({
+      url: this.props.url,
+      dataType: 'json',
+      cache: false,
+      success: function(data) {
+        this.setState({data: data});
+      }.bind(this),
+      error: function(xhr, status, err) {
+        console.error(this.props.url, status, err.toString());
+      }.bind(this)
+    });
+  },
 
-var CommentForm = React.createClass({
   render: function() {
+    var groupNodes = this.state.data.map(function(group) {
+      return (
+        <Group name={group.name} key={group.id} />
+      );
+    });
     return (
-      <div className="commentForm">
-        Hello, world! I am a CommentForm.
+      <div className="groupList">
+        {groupNodes}
       </div>
     );
   }
 });
 
 ReactDOM.render(
-  <CommentBox />,
+    <GroupList url="/api/groups" />,
   document.getElementById('content')
 );
