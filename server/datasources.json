@@ -1,0 +1,12 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "ltmdf": {
+    "name": "ltmdf",
+    "connector": "mongodb",
+    "host": "localhost",
+    "port": 27017
+  }
+}
