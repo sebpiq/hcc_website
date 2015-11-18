@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "pretest": "jshint .",
-    "build": "browserify -t [ babelify --presets [ react ] ] main.js -o public/js/bundle.js"
+    "postinstall": "browserify -t [ babelify --presets [ react ] ] main.js -o public/js/bundle.js"
   },
   "dependencies": {
     "react-dom": "^0.14.2",
