@@ -4,7 +4,7 @@
 
 # Render frontend code
 
-Go to client, install packages with `npm install`, and render the bundle with `npm run build`.
+Go to client, install packages and render the bundle with `npm install`.
 
 
 # Todo
