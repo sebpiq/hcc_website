@@ -5,3 +5,11 @@
 # Render frontend code
 
 `cd client; nmp install && gulp`
+
+# Build
+
+`npm install`
+
+# Start
+
+`npm start`
