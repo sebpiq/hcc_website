@@ -4,7 +4,7 @@
 
 # Render frontend code
 
-`cd client; npm install && gulp; cd ..`
+`cd client; npm install && gulp build; cd ..`
 
 # Build
 
