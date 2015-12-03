@@ -2,7 +2,29 @@
 var React = require('react')
   , ReactDOM = require('react-dom')
   , $ = require('jquery')
+  , page = require('page')
 
+// Routing
+page.base('/pages')
+
+page.redirect('/', '/dashboard')
+
+page('/dashboard', function() {
+  console.log('dashboard')
+})
+
+page('/groups', function() {
+  console.log('groups')
+})
+
+// Default route (404)
+page('*', function() {
+  console.log('not found')
+})
+
+page.start()
+
+/*
 var Group = React.createClass({
 
   render: function() {
@@ -55,3 +77,4 @@ ReactDOM.render(
     <GroupList url="/api/groups" />,
   document.getElementById('content')
 );
+*/

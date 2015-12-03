@@ -16,7 +16,8 @@
     "react": "^0.14.2",
     "react-dom": "^0.14.2",
     "vinyl-source-stream": "^1.1.0",
-    "run-sequence": "^1.1.5"
+    "run-sequence": "^1.1.5",
+    "page": "^1.6.4"
   },
   "repository": {
     "type": "",
