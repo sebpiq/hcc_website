@@ -1,4 +1,5 @@
 # Requirements
+
 - Gulp
   - Install via npm with `npm install -g gulp`
 
@@ -6,10 +7,10 @@
 
 `cd client; npm install && gulp build; cd ..`
 
-# Build
+# Install backend dependencies
 
 `npm install`
 
-# Start
+# Start server
 
 `npm start`
