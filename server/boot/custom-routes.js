@@ -8,4 +8,9 @@ module.exports = function(app) {
   app.route(/^\/pages(\/|(\/\w+))?$/).get(function(req, res) {
     res.sendFile(path.join(templatesDir, 'index.html'))
   })
+
+  // !!! Temporary home page
+  app.route(/^\/home$/).get(function(req, res) {
+    res.sendFile(path.join(templatesDir, 'home.html'))
+  })
 }

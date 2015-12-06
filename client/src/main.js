@@ -3,7 +3,9 @@ var React = require('react')
   , ReactDOM = require('react-dom')
   , $ = require('jquery')
   , page = require('page')
-  , groupViews = require('./groups/views')
+  , groupsViews = require('./groups/views')
+  , usersViews = require('./users/views')
+
 
 // Routing
 page.base('/pages')
@@ -16,7 +18,14 @@ page('/dashboard', function() {
 
 page('/groups', function() {
   ReactDOM.render(
-    <groupViews.GroupList url="/api/groups" />,
+    <groupsViews.GroupList url="/api/groups" />,
+    document.getElementById('content')
+  )
+})
+
+page('/signUp', function() {
+  ReactDOM.render(
+    <usersViews.UserRegister />,
     document.getElementById('content')
   )
 })

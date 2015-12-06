@@ -17,7 +17,12 @@
     "react-dom": "^0.14.2",
     "vinyl-source-stream": "^1.1.0",
     "run-sequence": "^1.1.5",
-    "page": "^1.6.4"
+    "page": "^1.6.4",
+    "react-ux-password-field": "^0.9.10",
+    "form-serialize": "^0.7.0",
+    "validator": "^4.3.0",
+    "validation-pod": "^0.2.2",
+    "gulp-less": "^3.0.5"
   },
   "repository": {
     "type": "",
