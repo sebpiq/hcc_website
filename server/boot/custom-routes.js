@@ -13,4 +13,8 @@ module.exports = function(app) {
   app.route(/^\/home$/).get(function(req, res) {
     res.sendFile(path.join(templatesDir, 'home.html'))
   })
+
+  app.route(/^\/?$/).get(function(req, res) {
+    res.sendFile(path.join(templatesDir, 'home.html'))
+  })
 }

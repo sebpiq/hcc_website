@@ -14,7 +14,8 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "db",
+    "public": false
   },
   "AccessToken": {
     "dataSource": "db",
@@ -34,6 +35,6 @@
   },
   "group": {
     "dataSource": "ltmdf",
-    "public": true
+    "public": false
   }
 }
