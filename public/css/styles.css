@@ -1,9 +1,15 @@
+a {
+  text-decoration: none !important;
+}
 body {
   background-color: #fff;
   font-family: 'Raleway';
   font-size: 16px;
   margin: 0;
   padding: 0;
+}
+small {
+  text-align: left;
 }
 .nav {
   position: fixed;
@@ -45,8 +51,7 @@ body {
   color: #7bc9c8;
 }
 .hero {
-  min-height: 535px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #7bc9c8;
   z-index: -1;
 }
 .heroimage {
@@ -69,7 +74,7 @@ body {
 }
 h1 {
   color: white;
-  padding-top: 200px;
+  padding: 200px 0 100px 0;
   text-align: center;
   margin-top: 0;
   text-transform: uppercase;
@@ -110,41 +115,41 @@ p.ingress {
   background-color: white;
   padding: 2em 0;
 }
+/*
+.workshops{
+	background-color:@highlighColor;
+}*/
 .map {
   padding: 2em 0 0 0;
 }
 .workshopContainer {
   width: 70%;
-  margin: 4em auto;
-}
-.workshopContainer .subsection img {
-  max-width: 85%;
-}
-.workshopContainer .left p,
-.workshopContainer .left img {
-  max-width: 85%;
-  padding-right: 5%;
+  margin: 2em auto;
 }
 /*SECTIONS*/
 .section {
   width: 100%;
-  margin-top: 4em;
-  margin-bottom: 4em;
+  margin-top: 2em;
+  margin-bottom: 2em;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
 }
-.subsection {
-  max-width: 49%;
+.section p {
+  text-align: left;
+  line-height: 1.3em;
+}
+.workshopContainer {
+  max-width: 350px;
   display: inline-block;
   vertical-align: top;
   font-family: 'Raleway';
   font-size: 1em;
   line-height: 1.4em;
   text-align: left;
-}
-.partners .subsection {
-  max-width: 59%;
+  background-color: white;
+  padding: 2%;
+  border: 2px solid #7bc9c8;
 }
 .subsection ul {
   max-width: 380px;
@@ -174,7 +179,7 @@ p.ingress {
 .circle2 {
   background-color: #7bc9c8;
   color: white;
-  width: 10em;
+  width: 9em;
   height: 5.5em;
   padding-top: 2.5em;
   margin-left: 1.5em;
@@ -224,10 +229,27 @@ label {
 #messageForm {
   height: 300px;
 }
+@media all and (min-width: 1000px) {
+  .section {
+    width: 80%;
+    max-width: 1200px;
+  }
+  .section.about {
+    width: 80%;
+    max-width: 900px;
+  }
+  .section p {
+    max-width: 900px;
+  }
+  .subsection ul {
+    text-align: left;
+    max-width: 400px;
+  }
+}
 @media all and (max-width: 1000px) {
   .section {
     width: 80%;
-    padding: 9%;
+    /*	padding: 9%;*/
   }
   .section.map,
   .section.workshops {
@@ -240,6 +262,12 @@ label {
   }
   .mobileNav {
     display: block;
+  }
+  .nav ul.open {
+    max-width: 100px;
+    background-color: white;
+    padding: 3%;
+    margin-top: -5px;
   }
   .nav ul li {
     display: none;
