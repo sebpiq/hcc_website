@@ -1,7 +1,3 @@
-## Client
-
-This is the place for your application front-end files.
-
 # Requirements
 
 - Gulp
@@ -14,6 +10,6 @@ This is the place for your application front-end files.
 # Build
 
 - Just build
-  - `gulp build`
+  - `gulp less`
 - Build and watch  
   - `gulp`
