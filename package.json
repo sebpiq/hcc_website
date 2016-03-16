@@ -6,22 +6,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "babel-preset-react": "^6.1.18",
-    "babelify": "^7.2.0",
-    "browserify": "^12.0.1",
     "gulp": "^3.9.0",
     "gulp-notify": "^2.2.0",
-    "gulp-rename": "^1.2.2",
-    "jquery": "^2.1.4",
-    "react": "^0.14.2",
-    "react-dom": "^0.14.2",
-    "vinyl-source-stream": "^1.1.0",
     "run-sequence": "^1.1.5",
-    "page": "^1.6.4",
-    "react-ux-password-field": "^0.9.10",
-    "form-serialize": "^0.7.0",
-    "validator": "^4.3.0",
-    "validation-pod": "^0.2.2",
     "gulp-less": "^3.0.5"
   },
   "repository": {
