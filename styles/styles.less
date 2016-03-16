@@ -4,8 +4,13 @@
 @highlighColor: #7bc9c8;
 @ReverseColor: white;
 @darkColor: #424242;
-@sectionMarginsTB: 4em;
+@sectionMarginsTB: 2em;
 @Subtle: lightgrey;
+
+
+a{
+	text-decoration: none !important;
+}
 
 body {
   background-color: @bgColor;
@@ -13,6 +18,10 @@ body {
   font-size: 16px;
   margin: 0;
   padding: 0;
+}
+
+small{
+	text-align:left;
 }
 
 .nav{
@@ -64,8 +73,7 @@ body {
 }
 
 .hero{
-	min-height: 535px;
-	background-color: rgba(0,0,0,0.5);
+	background-color: @highlighColor;
 	z-index:-1;
 
 }
@@ -92,7 +100,7 @@ body {
 
 h1{
 	color: @ReverseColor;
-	padding-top: 200px;
+	padding:200px 0 100px 0;
 	text-align: center;
 	margin-top:0;
 	text-transform: uppercase;
@@ -136,6 +144,10 @@ p.ingress {
 	background-color: @ReverseColor;
 	padding: 2em 0;
 }
+/*
+.workshops{
+	background-color:@highlighColor;
+}*/
 
 .map{
 	padding: 2em 0 0 0;	
@@ -147,13 +159,12 @@ p.ingress {
 }
 
  .workshopContainer .subsection img{
-	max-width: 85%;
+	
 }
 
 .workshopContainer .left p, 
 .workshopContainer .left img{
-	max-width: 85%;
-	padding-right: 5%;
+
 }
 
 
@@ -167,19 +178,24 @@ p.ingress {
 	text-align: center;
 }
 
-.subsection{
-	max-width: 49%;
+.section p{
+	text-align:left;
+	line-height: 1.3em;
+}
+
+.workshopContainer{
+	max-width: 350px;
 	display: inline-block;
 	vertical-align: top;
 	font-family: @bodyfont;
 	font-size: 1em;
 	line-height: 1.4em;
 	text-align: left;
+	background-color: white;
+	padding: 2%;
+	border: 2px solid @highlighColor;
 }
 
-.partners .subsection{
-	max-width: 59%;	
-}
 
 .subsection ul{ 
 	max-width: 380px;
@@ -215,7 +231,7 @@ p.ingress {
 .circle2{
 	background-color: @highlighColor;
 	color: @ReverseColor;
-	width: 10em;
+	width: 9em;
 	height: 5.5em;
 	padding-top: 2.5em;
 	margin-left: 1.5em;
@@ -277,10 +293,34 @@ label{
 	height: 300px;	
 }
 
+
+@media all and (min-width: 1000px){
+
+	.section{
+		width: 80%;
+		max-width: 1200px;
+	}
+
+	.section.about{
+		width:80%;
+		max-width:900px;
+	}
+
+.section p{
+	max-width: 900px;
+
+}
+.subsection ul{
+	text-align: left;
+	max-width: 400px;
+
+}
+
+}
 @media all and (max-width: 1000px){
 	.section{
 		width:80%;
-		padding: 9%;
+	/*	padding: 9%;*/
 	}
 
 	.section.map, .section.workshops{
@@ -297,8 +337,15 @@ label{
 		display: block;
 	}
 
+	.nav ul.open{
+	max-width: 100px;
+	background-color: white;
+	padding: 3%;
+	margin-top: -5px;
+	}
+
 	.nav ul li{
-		display: none;	
+	display:none;
 		padding-top: 1em; 
 		text-align: right;
 		transition: all 0.5s ease-in-out;
