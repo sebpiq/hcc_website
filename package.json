@@ -18,5 +18,10 @@
     "type": "",
     "url": ""
   },
-  "description": "ltmdf-client"
+  "description": "ltmdf-client",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sebpiq/hcc_website"
+  },
+  "license": "Apache-2.0"
 }

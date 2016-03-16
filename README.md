@@ -13,3 +13,7 @@
   - `gulp less`
 - Build and watch  
   - `gulp`
+
+# Start server
+
+`npm start`
