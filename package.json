@@ -3,13 +3,16 @@
   "version": "0.1.0",
   "scripts": {
     "pretest": "jshint .",
+    "prestart": "gulp less",
+    "start": "node main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "express": "^4.13.4",
     "gulp": "^3.9.0",
+    "gulp-less": "^3.0.5",
     "gulp-notify": "^2.2.0",
-    "run-sequence": "^1.1.5",
-    "gulp-less": "^3.0.5"
+    "run-sequence": "^1.1.5"
   },
   "repository": {
     "type": "",
