@@ -22,6 +22,11 @@ body {
 
 small{
 	text-align:left;
+	color: @highlighColor;
+}
+
+.about small{
+	margin-left: -1em;
 }
 
 .nav{
@@ -194,8 +199,14 @@ p.ingress {
 	background-color: white;
 	padding: 2%;
 	border: 2px solid @highlighColor;
+
+
 }
 
+
+.workshopContainer.withImage{
+	min-height: 462px
+}
 
 .subsection ul{ 
 	max-width: 380px;
@@ -237,6 +248,7 @@ p.ingress {
 	margin-left: 1.5em;
 	margin-top: 2.5em;
 	display: inline-block;
+	vertical-align:top;
 }
 
  .circle2 img{
@@ -294,7 +306,19 @@ label{
 }
 
 
-@media all and (min-width: 1000px){
+@media all and (min-width: 911px){
+
+	.workshopContainer{
+		margin-right: 2em;
+	}
+
+	.workshopContainer.withImage{
+		min-height: 462px;
+	}
+
+	.workshopContainer.withoutImage{
+		min-height: 176px;
+	}
 
 	.section{
 		width: 80%;
@@ -316,11 +340,22 @@ label{
 
 }
 
+	.subsection{
+		max-width: 920px;
+		margin:0 auto;
+	}
+
 }
-@media all and (max-width: 1000px){
+@media all and (max-width: 910px){
 	.section{
 		width:80%;
 	/*	padding: 9%;*/
+	}
+
+	.workshopContainer.withImage,.workshopContainer.withoutImage{
+		min-height: unset;
+		min-height: auto;
+
 	}
 
 	.section.map, .section.workshops{
@@ -338,9 +373,11 @@ label{
 	}
 
 	.nav ul.open{
-	max-width: 100px;
+	max-width: 180px;
+	width:50%;
 	background-color: white;
-	padding: 3%;
+	padding-bottom: 36px;
+	padding-top:18px;
 	margin-top: -5px;
 	}
 
@@ -360,8 +397,6 @@ label{
 	p.ingress{
 		max-width: 80%;
 	}
-
-
 	.subsection{
 		text-align:left;
 		max-width: 100%;
@@ -370,6 +405,33 @@ label{
 
 	.subsection ul{
 		max-width: 400px;
+	}
+	.workshopContainer{
+		width:80%;
+		padding: 5%;
+		margin:1em auto;
+	}
+}
+
+@media all and (max-width: 560px){
+	
+	
+
+	.section{
+		max-width: 88%;
+	}
+
+	#logo {
+		max-width: 200px;
+		padding-right: 72px;
+	}
+
+	.subsection ul{
+		max-width: 100%;
+	}
+
+	.circle2{
+		margin: 1em auto;
 	}
 
 }
